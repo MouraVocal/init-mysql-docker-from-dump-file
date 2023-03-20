@@ -1,0 +1,12 @@
+services:
+  bd:
+    build:
+      context: .
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+    ports:
+      - 3600:3600
+    volumes:
+      - ./bd:/var/lib/mysql
