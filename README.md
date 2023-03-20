@@ -3,8 +3,8 @@
 ## How to use
 
 - Clone this repository
-- Put your dump file inside `dump` folder
-- Change the dump file name in `Dockerfile` or rename the dump file to `dump.sql`
+- Create a dir named `dump` on this root repository and put your dump file inside
+- Change the dump file name on `Dockerfile` or rename your dump file that should be in `dump` directory to `dump.sql`
 - Open your terminal and run:
   ```bash
   docker-compose up
@@ -16,4 +16,4 @@
 
 ## Persisting database changes
 
-- From now on there should be a dir `bd` that will persist changes to the database.
+- From now on, there should be a dir `bd` that will persist changes to the database.
